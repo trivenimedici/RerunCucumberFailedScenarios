@@ -1,0 +1,305 @@
+<html>
+<head><style type="text/css">h1 {background-color:#9999CC}
+h2 {background-color:#BBBBCC}
+h3 {background-color:#DDDDFF}
+th {border:1px solid black;background-color:#CCCCDD;}
+td{border:1px solid black;}
+table {border:1px solid black;border-collapse: collapse;}
+.chart {border:0px none black;border-collapse: collapse;background-color: none;}
+.passed {background-color:lightgreen;font-weight:bold;color:darkgreen}
+.skipped {background-color:silver;font-weight:bold;color:darkgray}
+.failed {background-color:tomato;font-weight:bold;color:darkred}
+.undefined {background-color:gold;font-weight:bold;color:goldenrod}
+.known {background-color:goldenrod;font-weight:bold;color:darkred}
+.passed_description {background-color:#D0FFD0;font-weight:bold;font-style:italic;color:black}
+.failed_description {background-color:#FFA898;font-weight:bold;font-style:italic;color:black}
+.comment {font-family:courier;font-weight:normal;font-size:small;color:black;border:1px dashed black;background-color:silver}
+.tip {font-family:courier;font-weight:normal;font-size:small;color:white;background-color:black}
+OL { counter-reset: item }
+OL>LI { display: block }
+OL>LI:before { content: counters(item, ".") " "; counter-increment: item }
+
+div.header {
+    display: block; text-align: center;
+    position: running(header);
+}
+div.footer {
+    display: block; text-align: center;
+    position: running(footer);
+}
+div.content {page-break-after: always;}
+@page {
+	 size: auto;
+     @top-center {
+     	content: "Detailed Results Report";
+	    color: silver;
+	    font-size: 14px;
+     }
+     @top-right {
+     	content: date("dd MMM, yyyy hh:mm");
+	    color: silver;
+	    font-size: 8px;
+     }
+    @bottom-right {
+    	content: "Page " counter(page) " of " counter(pages) ;
+	    color: silver;
+	    font-size: 8px;
+    }
+}
+</style>
+<title>Detailed Results Report</title>
+<meta charset="UTF-8" />
+</head>
+  <body>
+    <div class='header'></div>
+    <div class='footer'></div>
+<h1>Overview</h1>
+
+
+<table>
+	<tr><th></th><th>Passed</th><th>Failed</th><th>Known</th><th>Undefined</th><th>Total</th><th>%Passed</th></tr>
+	<tr><th>Features</th>
+		<td class="passed" id="features_passed">1</td>
+		<td class="failed" id="features_failed">1</td>
+		<td class="known" id="features_known">0</td>
+		<td class="undefined" id="features_undefined">0</td>
+		<td id="features_total">2</td>
+		<td id="features_rate">
+				50%
+		</td>
+	</tr>
+	<tr><th>Scenarios</th>
+		<td class="passed" id="scenarios_passed">2</td>
+		<td class="failed" id="scenarios_failed">2</td>
+		<td class="known" id="scenarios_known">0</td>
+		<td class="undefined" id="scenarios_undefined">0</td>
+		<td id="scenarios_total">4</td>
+		<td id="scenarios_rate">
+				50%
+		</td>
+	</tr>
+	<tr><th>Steps</th>
+		<td class="passed" id="steps_passed">10</td>
+		<td class="failed" id="steps_failed">2</td>
+		<td class="known" id="steps_known">0</td>
+		<td class="undefined" id="steps_undefined">8</td>
+		<td id="steps_total">20</td>
+		<td id="steps_rate">
+				50%
+		</td>
+	</tr>
+</table>
+<div><b>Overall Duration: 0h 02m 57s</b></div>
+
+<a id="top"></a><h1>Table of Contents</h1>
+
+<ol>
+<li> <span class="failed"><a href="#feature-2application-login">application login</a></span>
+	<ol>
+        <li> <span class="failed"><a href="#sc-3-application-login;home-page-default-login">home page default login</a></span></li>
+        <li> <span class="failed"><a href="#sc-3-application-login;home-page-default-login-retry1">home page default login (retry 1)</a></span></li>
+        <li> <span class="passed"><a href="#sc-3-application-login;home-page-default-login-retry2">home page default login (retry 2)</a></span></li>
+    </ol></li>
+<li> <span class="passed"><a href="#feature-2register-to-app">register to app</a></span>
+	<ol>
+        <li> <span class="passed"><a href="#sc-3-register-to-app;user-register-to-app">user register to app</a></span></li>
+    </ol></li>
+</ol>
+
+<h1>Detailed Results Report</h1>
+
+<table width="700px">
+	<tr class="failed"><td colspan="4"><b>Feature:</b> <a id="feature-2application-login">application login</a></td></tr>
+    <tr class="failed">
+    	<td><small><b>Passed:</b> 1</small></td>
+        <td><small><b>Failed:</b> 2</small></td>
+        <td><small><b>Undefined:</b> 0</small></td>
+        <td><small>Duration: 82.57s</small></td>
+    </tr>
+	<tr class="failed">
+		<td colspan="4" style="padding-left:20px">
+		<table width="100%">
+				<tr class="failed">
+					<td colspan="4">
+						<b>Scenario:</b> <a id="sc-3-application-login;home-page-default-login">home page default login</a>
+					</td>
+				</tr>
+                <tr class="failed">
+                	<td><small><b>Passed:</b> 0</small></td>
+                	<td><small><b>Failed:</b> 1</small></td>
+					<td><small><b>Undefined:</b> 4</small></td>
+					<td><small>Duration: 21.93s</small></td>
+				</tr>
+                <tr class="failed">
+	                <td colspan="4" style="padding-left:20px">
+						<table width="100%">
+                            	<tr class="failed">
+                            		<td><b>Given </b> user is on landing page</td>
+                            		<td width="100">21.93s</td>
+                        		</tr>
+    								<tr class="failed">
+										<td colspan="2">
+											<br>org.openqa.selenium.WebDriverException: java.io.IOException: unexpected end of stream on Connection{localhost:15250, proxy=DIRECT hostAddress=localhost/127.0.0.1:15250 cipherSuite=none protocol=http/1.1}</br><br>Build info: version: &#39;3.12.0&#39;, revision: &#39;7c6e0b3&#39;, time: &#39;2018-05-08T14:04:26.12Z&#39;</br><br>System info: host: &#39;LH7U05CG6481HKZ&#39;, ip: &#39;10.198.49.6&#39;, os.name: &#39;Windows 7&#39;, os.arch: &#39;x86&#39;, os.version: &#39;6.1&#39;, java.version: &#39;1.8.0_91&#39;</br><br>Driver info: driver.version: RemoteWebDriver</br><br>	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)</br><br>	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)</br><br>	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)</br><br>	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:371)</br><br>	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)</br><br>	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)</br><br>	at stepDefinitions.stepDefinition1.user_is_on_lading_page(stepDefinition1.java:23)</br><br>	at ✽.Given user is on landing page(feature1.feature:4)</br><br>Caused by: java.io.IOException: unexpected end of stream on Connection{localhost:15250, proxy=DIRECT hostAddress=localhost/127.0.0.1:15250 cipherSuite=none protocol=http/1.1}</br><br>	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:205)</br><br>	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)</br><br>	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)</br><br>	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)</br><br>	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)</br><br>	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)</br><br>	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)</br><br>	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)</br><br>	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)</br><br>	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)</br><br>	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)</br><br>	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)</br><br>	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)</br><br>	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)</br><br>	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)</br><br>	at okhttp3.RealCall.execute(RealCall.java:77)</br><br>	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)</br><br>	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)</br><br>	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)</br><br>	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)</br><br>	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)</br><br>	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:371)</br><br>	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)</br><br>	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)</br><br>	at stepDefinitions.stepDefinition1.user_is_on_lading_page(stepDefinition1.java:23)</br><br>	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)</br><br>	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)</br><br>	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)</br><br>	at java.lang.reflect.Method.invoke(Method.java:498)</br><br>	at cucumber.runtime.Utils$1.call(Utils.java:40)</br><br>	at cucumber.runtime.Timeout.timeout(Timeout.java:16)</br><br>	at cucumber.runtime.Utils.invoke(Utils.java:34)</br><br>	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)</br><br>	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)</br><br>	at cucumber.runtime.ExtendedRuntime.runStep(ExtendedRuntime.java:319)</br><br>	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)</br><br>	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)</br><br>	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)</br><br>	at com.github.mkolisnyk.cucumber.runner.ExtendedExecutionUnitRunner.run(ExtendedExecutionUnitRunner.java:32)</br><br>	at com.github.mkolisnyk.cucumber.runner.ExtendedFeatureRunner.runChild(ExtendedFeatureRunner.java:99)</br><br>	at com.github.mkolisnyk.cucumber.runner.ExtendedFeatureRunner.runChild(ExtendedFeatureRunner.java:24)</br><br>	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)</br><br>	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)</br><br>	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)</br><br>	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)</br><br>	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)</br><br>	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)</br><br>	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)</br><br>	at com.github.mkolisnyk.cucumber.runner.ExtendedCucumber.runChild(ExtendedCucumber.java:108)</br><br>	at com.github.mkolisnyk.cucumber.runner.ExtendedCucumber.runChild(ExtendedCucumber.java:32)</br><br>	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)</br><br>	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)</br><br>	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)</br><br>	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)</br><br>	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)</br><br>	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)</br><br>	at com.github.mkolisnyk.cucumber.runner.ExtendedCucumber.run(ExtendedCucumber.java:148)</br><br>	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)</br><br>	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)</br><br>	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)</br><br>	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)</br><br>	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)</br><br>Caused by: java.io.EOFException: \n not found: limit=0 content=…</br><br>	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:227)</br><br>	at okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:212)</br><br>	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)</br><br>	... 61 more</br><br></br>
+										</td>
+									</tr>
+                            	<tr class="skipped">
+                            		<td><b>When </b> user login into the application with username and password</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>Then </b> Home page is populated</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> cards are displayed</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> all The elements are enabled</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+						</table>
+					</td>
+				</tr>
+				
+                <tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr>
+				<tr class="failed">
+					<td colspan="4">
+						<b>Scenario:</b> <a id="sc-3-application-login;home-page-default-login-retry1">home page default login (retry 1)</a>
+					</td>
+				</tr>
+                <tr class="failed">
+                	<td><small><b>Passed:</b> 0</small></td>
+                	<td><small><b>Failed:</b> 1</small></td>
+					<td><small><b>Undefined:</b> 4</small></td>
+					<td><small>Duration: 14.4s</small></td>
+				</tr>
+                <tr class="failed">
+	                <td colspan="4" style="padding-left:20px">
+						<table width="100%">
+                            	<tr class="failed">
+                            		<td><b>Given </b> user is on landing page</td>
+                            		<td width="100">14.40s</td>
+                        		</tr>
+    								<tr class="failed">
+										<td colspan="2">
+											<br>org.openqa.selenium.WebDriverException: java.io.IOException: unexpected end of stream on Connection{localhost:36356, proxy=DIRECT hostAddress=localhost/127.0.0.1:36356 cipherSuite=none protocol=http/1.1}</br><br>Build info: version: &#39;3.12.0&#39;, revision: &#39;7c6e0b3&#39;, time: &#39;2018-05-08T14:04:26.12Z&#39;</br><br>System info: host: &#39;LH7U05CG6481HKZ&#39;, ip: &#39;10.198.49.6&#39;, os.name: &#39;Windows 7&#39;, os.arch: &#39;x86&#39;, os.version: &#39;6.1&#39;, java.version: &#39;1.8.0_91&#39;</br><br>Driver info: driver.version: RemoteWebDriver</br><br>	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)</br><br>	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)</br><br>	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)</br><br>	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)</br><br>	at stepDefinitions.stepDefinition1.user_is_on_lading_page(stepDefinition1.java:22)</br><br>	at ✽.Given user is on landing page(feature1.feature:4)</br><br>Caused by: java.io.IOException: unexpected end of stream on Connection{localhost:36356, proxy=DIRECT hostAddress=localhost/127.0.0.1:36356 cipherSuite=none protocol=http/1.1}</br><br>	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:205)</br><br>	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)</br><br>	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)</br><br>	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)</br><br>	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)</br><br>	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)</br><br>	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)</br><br>	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)</br><br>	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)</br><br>	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)</br><br>	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)</br><br>	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)</br><br>	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)</br><br>	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)</br><br>	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)</br><br>	at okhttp3.RealCall.execute(RealCall.java:77)</br><br>	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)</br><br>	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)</br><br>	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)</br><br>	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)</br><br>	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)</br><br>	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)</br><br>	at stepDefinitions.stepDefinition1.user_is_on_lading_page(stepDefinition1.java:22)</br><br>	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)</br><br>	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)</br><br>	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)</br><br>	at java.lang.reflect.Method.invoke(Method.java:498)</br><br>	at cucumber.runtime.Utils$1.call(Utils.java:40)</br><br>	at cucumber.runtime.Timeout.timeout(Timeout.java:16)</br><br>	at cucumber.runtime.Utils.invoke(Utils.java:34)</br><br>	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)</br><br>	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)</br><br>	at cucumber.runtime.ExtendedRuntime.runStep(ExtendedRuntime.java:319)</br><br>	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)</br><br>	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)</br><br>	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)</br><br>	at com.github.mkolisnyk.cucumber.runner.ExtendedExecutionUnitRunner.run(ExtendedExecutionUnitRunner.java:32)</br><br>	at com.github.mkolisnyk.cucumber.runner.ExtendedFeatureRunner.retry(ExtendedFeatureRunner.java:141)</br><br>	at com.github.mkolisnyk.cucumber.runner.ExtendedFeatureRunner.runChild(ExtendedFeatureRunner.java:106)</br><br>	at com.github.mkolisnyk.cucumber.runner.ExtendedFeatureRunner.runChild(ExtendedFeatureRunner.java:24)</br><br>	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)</br><br>	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)</br><br>	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)</br><br>	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)</br><br>	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)</br><br>	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)</br><br>	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)</br><br>	at com.github.mkolisnyk.cucumber.runner.ExtendedCucumber.runChild(ExtendedCucumber.java:108)</br><br>	at com.github.mkolisnyk.cucumber.runner.ExtendedCucumber.runChild(ExtendedCucumber.java:32)</br><br>	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)</br><br>	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)</br><br>	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)</br><br>	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)</br><br>	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)</br><br>	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)</br><br>	at com.github.mkolisnyk.cucumber.runner.ExtendedCucumber.run(ExtendedCucumber.java:148)</br><br>	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)</br><br>	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)</br><br>	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)</br><br>	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)</br><br>	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)</br><br>Caused by: java.io.EOFException: \n not found: limit=0 content=…</br><br>	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:227)</br><br>	at okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:212)</br><br>	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)</br><br>	... 60 more</br><br></br>
+										</td>
+									</tr>
+                            	<tr class="skipped">
+                            		<td><b>When </b> user login into the application with username and password</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>Then </b> Home page is populated</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> cards are displayed</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> all The elements are enabled</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+						</table>
+					</td>
+				</tr>
+				
+                <tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr>
+				<tr class="passed">
+					<td colspan="4">
+						<b>Scenario:</b> <a id="sc-3-application-login;home-page-default-login-retry2">home page default login (retry 2)</a>
+					</td>
+				</tr>
+                <tr class="passed">
+                	<td><small><b>Passed:</b> 5</small></td>
+                	<td><small><b>Failed:</b> 0</small></td>
+					<td><small><b>Undefined:</b> 0</small></td>
+					<td><small>Duration: 46.24s</small></td>
+				</tr>
+                <tr class="passed">
+	                <td colspan="4" style="padding-left:20px">
+						<table width="100%">
+                            	<tr class="passed">
+                            		<td><b>Given </b> user is on landing page</td>
+                            		<td width="100">26.25s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>When </b> user login into the application with username and password</td>
+                            		<td width="100">5.00s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>Then </b> Home page is populated</td>
+                            		<td width="100">5.00s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> cards are displayed</td>
+                            		<td width="100">5.00s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> all The elements are enabled</td>
+                            		<td width="100">5.00s</td>
+                        		</tr>
+						</table>
+					</td>
+				</tr>
+				
+                <tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr>
+		</table>
+	</td></tr><tr><td colspan="5"></td></tr>
+	<tr class="passed"><td colspan="4"><b>Feature:</b> <a id="feature-2register-to-app">register to app</a></td></tr>
+    <tr class="passed">
+    	<td><small><b>Passed:</b> 1</small></td>
+        <td><small><b>Failed:</b> 0</small></td>
+        <td><small><b>Undefined:</b> 0</small></td>
+        <td><small>Duration: 34.7s</small></td>
+    </tr>
+	<tr class="passed">
+		<td colspan="4" style="padding-left:20px">
+		<table width="100%">
+				<tr class="passed">
+					<td colspan="4">
+						<b>Scenario:</b> <a id="sc-3-register-to-app;user-register-to-app">user register to app</a>
+					</td>
+				</tr>
+                <tr class="passed">
+                	<td><small><b>Passed:</b> 5</small></td>
+                	<td><small><b>Failed:</b> 0</small></td>
+					<td><small><b>Undefined:</b> 0</small></td>
+					<td><small>Duration: 34.7s</small></td>
+				</tr>
+                <tr class="passed">
+	                <td colspan="4" style="padding-left:20px">
+						<table width="100%">
+                            	<tr class="passed">
+                            		<td><b>Given </b> user navigated to the application</td>
+                            		<td width="100">14.70s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>When </b> entered email id</td>
+                            		<td width="100">5.00s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>Then </b> click next</td>
+                            		<td width="100">5.00s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> entered username</td>
+                            		<td width="100">5.00s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> entered password</td>
+                            		<td width="100">5.00s</td>
+                        		</tr>
+						</table>
+					</td>
+				</tr>
+				
+                <tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr>
+		</table>
+	</td></tr><tr><td colspan="5"></td></tr>
+</table>
+
+	</body>
+</html>

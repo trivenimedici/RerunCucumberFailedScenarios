@@ -1,0 +1,182 @@
+[
+  {
+    "source": "^entered password$",
+    "steps": [
+      {
+        "name": "entered password",
+        "aggregatedDurations": {
+          "average": 4.999293994,
+          "median": 4.999293994
+        },
+        "durations": [
+          {
+            "duration": 4.999293994,
+            "location": "feature2.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^entered email id$",
+    "steps": [
+      {
+        "name": "entered email id",
+        "aggregatedDurations": {
+          "average": 4.999818268,
+          "median": 4.999818268
+        },
+        "durations": [
+          {
+            "duration": 4.999818268,
+            "location": "feature2.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user is on landing page$",
+    "steps": [
+      {
+        "name": "user is on landing page",
+        "aggregatedDurations": {
+          "average": 26.247089417,
+          "median": 26.247089417
+        },
+        "durations": [
+          {
+            "duration": 26.247089417,
+            "location": "feature1.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user login into the application with username and password$",
+    "steps": [
+      {
+        "name": "user login into the application with username and password",
+        "aggregatedDurations": {
+          "average": 4.99944824,
+          "median": 4.99944824
+        },
+        "durations": [
+          {
+            "duration": 4.99944824,
+            "location": "feature1.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Home page is populated$",
+    "steps": [
+      {
+        "name": "Home page is populated",
+        "aggregatedDurations": {
+          "average": 4.999422396,
+          "median": 4.999422396
+        },
+        "durations": [
+          {
+            "duration": 4.999422396,
+            "location": "feature1.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user navigated to the application$",
+    "steps": [
+      {
+        "name": "user navigated to the application",
+        "aggregatedDurations": {
+          "average": 14.701614174,
+          "median": 14.701614174
+        },
+        "durations": [
+          {
+            "duration": 14.701614174,
+            "location": "feature2.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^cards are displayed$",
+    "steps": [
+      {
+        "name": "cards are displayed",
+        "aggregatedDurations": {
+          "average": 4.999627921,
+          "median": 4.999627921
+        },
+        "durations": [
+          {
+            "duration": 4.999627921,
+            "location": "feature1.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^click next$",
+    "steps": [
+      {
+        "name": "click next",
+        "aggregatedDurations": {
+          "average": 4.999775194,
+          "median": 4.999775194
+        },
+        "durations": [
+          {
+            "duration": 4.999775194,
+            "location": "feature2.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^entered username$",
+    "steps": [
+      {
+        "name": "entered username",
+        "aggregatedDurations": {
+          "average": 4.999670586,
+          "median": 4.999670586
+        },
+        "durations": [
+          {
+            "duration": 4.999670586,
+            "location": "feature2.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^all The elements are enabled$",
+    "steps": [
+      {
+        "name": "all The elements are enabled",
+        "aggregatedDurations": {
+          "average": 4.999671816,
+          "median": 4.999671816
+        },
+        "durations": [
+          {
+            "duration": 4.999671816,
+            "location": "feature1.feature:8"
+          }
+        ]
+      }
+    ]
+  }
+]

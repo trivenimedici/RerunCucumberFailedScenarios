@@ -6,6 +6,8 @@ Retry count tells how many times the framework should retry running the failed s
 Configuration to be added:
 
 Adding the Dependencies in POM.XML:
+
+
           <dependency>
              <groupId>com.github.mkolisnyk</groupId>
              <artifactId>cucumber-runner</artifactId>

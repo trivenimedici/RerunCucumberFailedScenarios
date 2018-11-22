@@ -1,5 +1,6 @@
 ExtendedCucumberOptions to rerun the failed scenarios Automatically:
-\
+
+
 This uses the Extendedcucumberoptions feature to rerun the failed scenarios in the BDD test suite using cucumber with java.
 Retry count tells how many times the framework should retry running the failed scenarios
 
